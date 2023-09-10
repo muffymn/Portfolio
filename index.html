@@ -7,12 +7,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <!-- Iconify Icons -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="images/????" alt="">      <!-- Logo image source needed -->   
+                <!-- <img src="images/????" alt="">       Logo image source for future -->   
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -20,9 +24,9 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Tech??</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,44 +34,58 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Mufaddal Naguthanawala</strong>
+                Hi, I'm <strong>Mufaddal Naguthanawala</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">full stack dev</p>
-            <img src="images/profile_1.jpg" alt="a picture of Mufaddal" class="intro__img">     <!-- Image source needed -->
+            <img src="images/profile_1.jpg" alt="a picture of Mufaddal" class="intro__img">     
         </section>
         
         
         <!-- My services -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
+            <h2 class="section__title section__title--services">Technical Skills</h2>
             <div class="services">
                 <div class="service">
-                    <h3>Framewros</h3>
-                    <p>Lorem ipsum dolor</p>
-                </div> <!-- / service -->
-                
+                    <ul class="skill-list">
+                        <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
+                        <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
+                        <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>   
+                        <li><span class="iconify" data-icon="logos:react" data-inline="false" data-width="90px" data-height="90px"></span><span>React</span></li>
+                    </ul>
+                </div>
                 <div class="service">
-                    <h3>Tools</h3>
-                    <p>Lorem ipsum dolor</p>
-                </div> <!-- / service -->
-                
+                    <ul class="skill-list">     
+                        <li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px"></span><span>Python</span></li>
+                        <li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>
+                    </ul>
+                </div>
                 <div class="service">
-                    <h3>Languages</h3>
-                    <p>Lorem ipsum dolor</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
+                    <ul class="skill-list">  
+                        <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
+                        <li><span class="iconify" data-icon="skill-icons:sqlite" data-inline="false" data-width="90px" data-height="90px"></span><span>SQLite</span></li>            
+                    </ul>
+                </div>  
+                <div class="service">
+                    <ul class="skill-list">  
+                        <li><span class="iconify" data-icon="skill-icons:flask-light" data-inline="false" data-width="90px" data-height="90px"></span><span>Flask</span></li>
+                        <li><span class="iconify" data-icon="devicon-plain:django-wordmark" data-inline="false" data-width="90px" data-height="90px"></span><span>Django</span></li>            
+                    </ul>
+                </div>
+            </div> 
+            <!-- / services -->
             
-            <a href="#work" class="btn">My Work</a>
+            <a href="#work" class="btn">My Projects</a>
         </section>
 
         <!-- About me -->
         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about"> Healthcare Professional and Self-taught Developer</p>
+            <h2 class="section__title section__title--about">About Me</h2>
+            <p class="section__subtitle section__subtitle--about"> Healthcare Worker and Self-taught Developer</p>
             
             <div class="about-me__body">
-                <p> I am</p>
-                <p> I am passionate about the intersection between healthcare and technology and</p>
+                <p> I'm a dedicated software developer based in Seattle, and I hold a BS in Lab Medicine from the University of Washington, which I graduated from in 2022. Currently, I'm applying my skills and knowledge at the UW Medical Center, where I work in a Molecular Diagnostics lab. What sets me apart is my unique journey into programming – I'm self-taught with over a year of hands-on experience. </p>
+                <p> I am especially passionate about the intersection of healthcare and technology, where I see incredible potential to drive positive change in the world. Whether it's improving patient care, streamlining processes, or enhancing research, I'm committed to leveraging technology to make a meaningful impact in healthcare.</p>
+                
             </div>
             
             <img src="images/profile_2.jpg" alt="Picture of Mufaddal" class="about-me__img">       
@@ -75,13 +93,13 @@
          
          <!-- My Work -->
          <section class="my-work" id="work">
-             <h2 class="section__title section__title--work">My work</h2>
+             <h2 class="section__title section__title--work">Projects</h2>
              <p class="section__subtitle section__subtitle--work">A few of my highlight projects</p>
              
              <div class="portfolio">
                  <!-- Portfolio item 01 -->
-                 <a href="portfolio-item.html" class="portfolio__item">
-                     <img src="images/placeholder.jpg" alt="" class="portfolio__img">  <!-- Image source needed -->
+                 <a href="sagedoku.html" class="portfolio__item">
+                     <img src="images/sagedoku.PNG" alt="" class="portfolio__img">  
                  </a>
                  
                  <!-- Portfolio item 02 -->
@@ -127,9 +145,7 @@
                  <li class="social-list__item">
                     <a class="social-list__link" href="https://twitter.com"><i class="fa-solid fa-file"></i></a>
                 </li>
-                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">d</a>
-                </li>
+                 
              </ul>
          </footer>
 
