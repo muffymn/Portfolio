@@ -407,20 +407,49 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    position: relative;
+    border-radius: 5px;
 }
 
 .portfolio__img {
+    height: 300px;
+    width: auto;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
     
     
+}
+
+.portfolio__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 250ms linear;
+}
+
+.portfolio__text h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.portfolio__item:hover .portfolio__text {
+    opacity: 1; /* Show the text on hover */
 }
 
 .portfolio__item:focus {
